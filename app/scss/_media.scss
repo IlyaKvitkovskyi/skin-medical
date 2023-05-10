@@ -1,0 +1,407 @@
+@media (max-width: 1200px) {
+  .sidebar-open {
+    transform: translateX(0%);
+  }
+
+  .burger-menu {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .burger-text {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .intro__title span {
+    font-size: 85px;
+  }
+
+  .about__inner {
+    flex-direction: column;
+  }
+
+  .about__left {
+    max-width: 100%;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .about__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .directions {
+    padding-top: 70px;
+  }
+
+  .directions__inner,
+  .confidence__inner {
+    flex-direction: column;
+  }
+
+  .directions__left {
+    margin-right: 0;
+    min-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .directions__title {
+    text-align: center;
+  }
+
+  .stock__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stock__item {
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-us__title {
+    text-align: center;
+    line-height: 45px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-input__wrap {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  select,
+  input,
+  button[type='submit'] {
+    width: 350px;
+    max-width: 350px;
+  }
+
+  .nav__btn {
+    display: none;
+  }
+
+  .stock {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__logo,
+  ul.footer__items,
+  .footer__socials {
+    margin-bottom: 30px;
+  }
+
+  .confidence__left,
+  .confidence__right {
+    width: 100%;
+  }
+
+  .advantages__items {
+    flex-wrap: wrap;
+    justify-content: inherit;
+  }
+
+  .advantages__item {
+    margin-bottom: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__left {
+    background-position: 42% 23%;
+  }
+
+  .nav {
+    display: none !important;
+  }
+
+  .burger-wrap {
+    display: none;
+  }
+
+  ul.burger-nav {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    text-align: center;
+    transform: translateX(-200%);
+    transition: all 0.4s;
+    width: 100%;
+    padding: 50px;
+  }
+
+  #burger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    padding: 10px;
+  }
+
+  .burger:before,
+  .burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .burger span {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    right: 25px;
+    top: 42px;
+    transition: all 0.3s;
+  }
+
+  .burger-nav.active {
+    transform: translateX(-94%);
+    top: 100%;
+    height: 100vh;
+  }
+
+  .intro.white {
+    background: white;
+  }
+
+  .burger:before,
+  .burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+  .burger.active:before {
+    transform: rotate(45deg);
+    top: 45px;
+    background-color: #525252;
+    height: 2px;
+  }
+
+  .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 52px;
+    background-color: #525252;
+    height: 2px;
+  }
+
+  .header.white {
+    background-color: white;
+  }
+
+  .header {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .burger-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-menu__item {
+    margin-bottom: 25px;
+  }
+
+  .burger-menu__item a {
+    font-size: 45px;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #efe6d3;
+    }
+  }
+
+  .lang a {
+    font-size: 18px;
+    color: #000;
+  }
+
+  .intro__top-right,
+  .intro__bottom-left {
+    display: none;
+  }
+
+  .intro__top-left {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .intro__license {
+    margin-left: 0;
+  }
+
+  .footer__items {
+    flex-direction: column;
+
+    .footer__link + .footer__link {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    .footer__link a:hover {
+      color: #efe6d3;
+    }
+  }
+
+  .about__right-title {
+    text-align: center;
+  }
+
+  .about__right-subtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .advantages {
+    padding-top: 70px;
+  }
+
+  .price__item-header {
+    font-size: 37px;
+  }
+
+  .price__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .price__content {
+    flex-direction: column;
+  }
+
+  .price__left,
+  .price__right {
+    width: 100%;
+  }
+
+  .old,
+  .new {
+    font-size: 14px;
+  }
+
+  .confidence__title {
+    font-size: 60px;
+  }
+
+  .confidence__list p {
+    font-size: 24px;
+  }
+
+  .about {
+    padding-bottom: 70px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+  }
+
+  .contacts {
+    padding-bottom: 70px;
+  }
+
+  .contacts__inner {
+    flex-direction: column;
+  }
+
+  .contacts__right iframe {
+    width: 350px;
+    height: 300px;
+  }
+
+  .contacts__left {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .intro__title span {
+    font-size: 60px;
+  }
+
+  .confidence__left {
+    margin-bottom: 50px;
+  }
+
+  .about__left,
+  .directions__left,
+  .confidence__img-wrap {
+    height: 300px;
+  }
+
+  .directions__title,
+  .stock__title,
+  .news__title {
+    font-size: 65px;
+  }
+
+  .stock__title {
+    margin-bottom: 20px;
+  }
+
+  .stock__top {
+    flex-direction: column;
+  }
+
+  .contact-us__title {
+    font-size: 50px;
+  }
+
+  .news__items {
+    justify-content: center !important;
+  }
+
+  .news__item {
+    margin-right: 0;
+  }
+
+  .about__left {
+    margin-bottom: 25px;
+  }
+
+  .about__right-title {
+    font-size: 50px;
+    line-height: 52px;
+  }
+}

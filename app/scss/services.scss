@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'vars';
+
+@import 'global';
+
+.stock {
+  &__first {
+    justify-content: center;
+  }
+
+  &__first-items {
+    margin-bottom: 150px;
+  }
+
+  &__items {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 360px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .burger-wrap {
+    display: none;
+  }
+}
+
+@import 'media';

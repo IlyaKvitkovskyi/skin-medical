@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'vars';
+
+@import 'global';
+
+// Intro
+
+.about {
+  // padding-bottom: 150px;
+
+  &__item {
+    margin-bottom: 150px;
+  }
+
+  &__date {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Raleway', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 100;
+    opacity: 0.4;
+    margin-bottom: 20px;
+  }
+
+  &__right {
+    &-title {
+      color: #000000;
+      font-size: 60px;
+      font-family: 'Cormorant', Arial, sans-serif;
+      line-height: 1;
+      font-weight: 600;
+      line-height: 60px;
+      margin-bottom: 25px;
+    }
+
+    &-subtitle p {
+      opacity: 0.6;
+    }
+  }
+
+  &__left {
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+
+    img {
+      height: 700px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .burger-wrap {
+    display: none;
+  }
+}
+
+@import 'media';

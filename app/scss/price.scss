@@ -1,0 +1,122 @@
+@import 'reset';
+@import 'vars';
+
+@import 'global';
+
+// Price
+.price {
+  padding-top: 90px;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+
+  &__item {
+    &-header {
+      color: #000000;
+      font-size: 60px;
+      font-family: 'Cormorant', Arial, sans-serif;
+      font-weight: 600;
+      width: 100%;
+      padding: 0 0 25px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      border-bottom: 2px solid #d1d1d1;
+      margin-bottom: 46px;
+
+      &-icon {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      &-icon:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 25px;
+        background-color: #3a3a3a;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+      }
+
+      &-icon::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 2px;
+        background-color: #3a3a3a;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+      }
+
+      &-icon[data-price-button-icon='open'] {
+        transform: rotate(-90deg);
+      }
+
+      &-icon[data-price-button-icon='open']:after {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    height: 0;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 71px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__left,
+  &__right {
+    width: 45%;
+  }
+
+  &__title {
+    font-family: 'Cormorant', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+  }
+}
+// /.Price
+
+@media (max-width: 1200px) {
+  .burger-wrap {
+    display: none;
+  }
+}
+
+@import 'media';
